@@ -50,11 +50,11 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/axis.html
-[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#axisscrollstrategies
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/chartxy.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#colorrgba
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/dashboard.html
-[DefaultLibraryStyle]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#defaultlibrarystyle
-[LineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/lineseries.html
-[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/solidfill.html
+[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/axis.html
+[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#axisscrollstrategies
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/chartxy.html
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#colorrgba
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/dashboard.html
+[DefaultLibraryStyle]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#defaultlibrarystyle
+[LineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/lineseries.html
+[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/solidfill.html
