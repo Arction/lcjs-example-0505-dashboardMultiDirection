@@ -1,4 +1,4 @@
-/**
+/*
  * LightningChartJS example that showcases series/axes progressing to all kinds of directions inside a dashboard.
  */
 // Import LightningChartJS
@@ -24,7 +24,6 @@ const grid = lightningChart().Dashboard({
     numberOfRows: 3,
     numberOfColumns: 3
 })
-    .setBackgroundFillStyle(new SolidFill().setColor(ColorRGBA(24, 24, 24)))
 
 // Add charts to dashboard.
 const cells = [

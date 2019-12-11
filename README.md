@@ -1,4 +1,4 @@
-# Dashboard multi-direction
+# Dashboard Multi-Direction
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -14,23 +14,25 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 - The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
 
-### Description 
+
+## Description
 
 This example shows series/axes progressing to all kinds of directions inside a dashboard.
 
-### API links
 
-* Dashboard: [Dashboard][]
-* Solid FillStyle: [SolidFill][]
-* RGBA color factory: [ColorRGBA][]
-* XY cartesian chart: [ChartXY][]
-* Axis: [Axis][]
-* Scroll strategies: [AxisScrollStrategies][]
-* Freeform line series: [LineSeries][]
-* Default library style: [DefaultLibraryStyle][]
+## API Links
+
+* Dashboard: [Dashboard]
+* Solid FillStyle: [SolidFill]
+* RGBA color factory: [ColorRGBA]
+* XY cartesian chart: [ChartXY]
+* Axis: [Axis]
+* Scroll strategies: [AxisScrollStrategies]
+* Freeform line series: [LineSeries]
+* Default library style: [DefaultLibraryStyle]
 
 
-### Support
+## Support
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
@@ -42,19 +44,21 @@ If you think you found a bug in the LightningChart JavaScript library, please co
 
 Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
 
-© Arction Ltd 2009-2019. All rights reserved.
-
 [0]: https://github.com/Arction/
 [1]: https://www.arction.com/lightningchart-js-api-documentation/
 [2]: https://www.arction.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/axis.html
-[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#axisscrollstrategies
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/chartxy.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#colorrgba
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/dashboard.html
-[DefaultLibraryStyle]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#defaultlibrarystyle
-[LineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/lineseries.html
-[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/solidfill.html
+© Arction Ltd 2009-2019. All rights reserved.
+
+
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/dashboard.html
+[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/solidfill.html
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#colorrgba
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/chartxy.html
+[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/axis.html
+[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#axisscrollstrategies
+[LineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/lineseries.html
+[DefaultLibraryStyle]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#defaultlibrarystyle
+
