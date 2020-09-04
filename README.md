@@ -24,14 +24,14 @@ This example shows series/axes progressing to all kinds of directions inside a d
 
 ## API Links
 
-* Dashboard: [Dashboard]
-* Solid FillStyle: [SolidFill]
-* RGBA color factory: [ColorRGBA]
-* XY cartesian chart: [ChartXY]
-* Axis: [Axis]
-* Scroll strategies: [AxisScrollStrategies]
-* Freeform line series: [LineSeries]
-* Default library style: [DefaultLibraryStyle]
+* [Dashboard]
+* [Solid FillStyle]
+* [RGBA color factory]
+* [XY cartesian chart]
+* [Axis]
+* [Scroll strategies]
+* [Freeform line series]
+* [Default library style]
 
 
 ## Support
@@ -55,12 +55,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/dashboard.html
-[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/solidfill.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#colorrgba
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html
-[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/axis.html
-[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#axisscrollstrategies
-[LineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/lineseries.html
-[DefaultLibraryStyle]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#defaultlibrarystyle
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/dashboard.html
+[Solid FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/solidfill.html
+[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#colorrgba
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/chartxy.html
+[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/axis.html
+[Scroll strategies]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#axisscrollstrategies
+[Freeform line series]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/lineseries.html
+[Default library style]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#defaultlibrarystyle
 

@@ -10,7 +10,8 @@ const {
     SolidFill,
     ColorRGBA,
     AxisScrollStrategies,
-    DataPatterns
+    DataPatterns,
+    Themes
 } = lcjs
 
 // Import data-generators from 'xydata'-library.
@@ -21,6 +22,7 @@ const {
 
 // Create a 3x3 dashboard.
 const grid = lightningChart().Dashboard({
+    // theme: Themes.dark 
     numberOfRows: 3,
     numberOfColumns: 3
 })
