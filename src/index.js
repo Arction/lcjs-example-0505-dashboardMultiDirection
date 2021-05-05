@@ -48,6 +48,9 @@ const createCell = (cell) => {
     // Setup data-generation for series.
     if (cell.row == cell.col) {
         const series = chart['add' + type]()
+        if (type === 'LineSeries') {
+            series.setCursorSolveBasis('nearest')
+        }
         // Random trace
         createTraceGenerator()
             .setNumberOfPoints(100000)
@@ -90,6 +93,9 @@ const createCell = (cell) => {
                 .setScrollStrategy(flipPlane ? AxisScrollStrategies.progressive : AxisScrollStrategies.fitting)
 
         const series = chart['add' + type](axisX, axisY)
+        if (type === 'LineSeries') {
+            series.setCursorSolveBasis('nearest')
+        }
         createProgressiveTraceGenerator()
             .setNumberOfPoints(100000)
             .generate()
