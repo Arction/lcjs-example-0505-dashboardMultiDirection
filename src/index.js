@@ -4,27 +4,20 @@
 // Import LightningChartJS
 const lcjs = require('@arction/lcjs')
 
+// Import xydata
+const xydata = require('@arction/xydata')
+
 // Extract required parts from LightningChartJS.
-const {
-    lightningChart,
-    SolidFill,
-    ColorRGBA,
-    AxisScrollStrategies,
-    DataPatterns,
-    Themes
-} = lcjs
+const { lightningChart, SolidFill, ColorRGBA, AxisScrollStrategies, DataPatterns, Themes } = lcjs
 
 // Import data-generators from 'xydata'-library.
-const {
-    createProgressiveTraceGenerator,
-    createTraceGenerator
-} = require('@arction/xydata')
+const { createProgressiveTraceGenerator, createTraceGenerator } = xydata
 
 // Create a 3x3 dashboard.
 const grid = lightningChart().Dashboard({
-    // theme: Themes.darkGold 
+    // theme: Themes.darkGold
     numberOfRows: 3,
-    numberOfColumns: 3
+    numberOfColumns: 3,
 })
 
 // Add charts to dashboard.
@@ -33,7 +26,7 @@ const cells = [
     { row: 2, col: 1 },
     { row: 1, col: 2 },
     { row: 0, col: 1 },
-    { row: 1, col: 1 }
+    { row: 1, col: 1 },
 ]
 const chooseRandom = (options) => options[Math.round(Math.random() * (options.length - 1))]
 const createCell = (cell) => {
@@ -41,7 +34,7 @@ const createCell = (cell) => {
         columnIndex: cell.col,
         rowIndex: cell.row,
         columnSpan: 1,
-        rowSpan: 1
+        rowSpan: 1,
     })
     // Add a random omni-directional series.
     const type = chooseRandom(['PointSeries', 'LineSeries'])
@@ -59,13 +52,14 @@ const createCell = (cell) => {
             .setStreamBatchSize(10)
             .setStreamRepeat(true)
             .toStream()
-            .forEach(point => series.add(point))
+            .forEach((point) => series.add(point))
     } else {
         // Random progressive trace with mapped direction.
         const flipPlane = cell.col == 1
         const mul = { x: cell.col == 0 ? -1 : 1, y: cell.row == 0 ? 1 : -1 }
         // Configure axes.
-        let axisX = chart.getDefaultAxisX(), axisY = chart.getDefaultAxisY()
+        let axisX = chart.getDefaultAxisX(),
+            axisY = chart.getDefaultAxisY()
         if (cell.row == cells.reduce((prev, cell) => Math.max(prev, cell.row), 0)) {
             axisX.dispose()
             axisX = chart.addAxisX(true)
@@ -76,20 +70,20 @@ const createCell = (cell) => {
         }
         if (mul.x < 0) {
             axisX
-                .setInterval(-100, 0)
+                .setInterval({ start: -100, end: 0, stopAxisAfter: false })
                 .setScrollStrategy(flipPlane ? AxisScrollStrategies.fitting : AxisScrollStrategies.regressive)
         } else
             axisX
-                .setInterval(0, 100)
+                .setInterval({ start: 0, end: 100, stopAxisAfter: false })
                 .setScrollStrategy(flipPlane ? AxisScrollStrategies.fitting : AxisScrollStrategies.progressive)
 
         if (mul.y < 0) {
             axisY
-                .setInterval(-100, 0)
+                .setInterval({ start: -100, end: 0, stopAxisAfter: false })
                 .setScrollStrategy(flipPlane ? AxisScrollStrategies.regressive : AxisScrollStrategies.fitting)
         } else
             axisY
-                .setInterval(0, 100)
+                .setInterval({ start: 0, end: 100, stopAxisAfter: false })
                 .setScrollStrategy(flipPlane ? AxisScrollStrategies.progressive : AxisScrollStrategies.fitting)
 
         const series = chart['add' + type](axisX, axisY)
@@ -103,7 +97,7 @@ const createCell = (cell) => {
             .setStreamBatchSize(2)
             .setStreamRepeat(true)
             .toStream()
-            .forEach(point => series.add({ x: (flipPlane ? point.y : point.x) * mul.x, y: (flipPlane ? point.x : point.y) * mul.y }))
+            .forEach((point) => series.add({ x: (flipPlane ? point.y : point.x) * mul.x, y: (flipPlane ? point.x : point.y) * mul.y }))
     }
     return chart.setTitle(type)
 }
