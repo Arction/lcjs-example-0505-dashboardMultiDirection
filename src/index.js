@@ -8,7 +8,7 @@ const lcjs = require('@arction/lcjs')
 const xydata = require('@arction/xydata')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, SolidFill, ColorRGBA, AxisScrollStrategies, DataPatterns, Themes } = lcjs
+const { lightningChart, AxisScrollStrategies, Themes } = lcjs
 
 // Import data-generators from 'xydata'-library.
 const { createProgressiveTraceGenerator, createTraceGenerator } = xydata

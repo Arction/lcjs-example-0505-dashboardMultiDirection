@@ -31,7 +31,6 @@ This example shows series/axes progressing to all kinds of directions inside a d
 * [Axis]
 * [Scroll strategies]
 * [Freeform line series]
-* [Default library style]
 
 
 ## Support
@@ -55,12 +54,11 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Dashboard]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/Dashboard.html
-[Solid FillStyle]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/SolidFill.html
-[RGBA color factory]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/functions/ColorRGBA.html
-[XY cartesian chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/ChartXY.html
-[Axis]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/Axis.html
-[Scroll strategies]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/AxisScrollStrategies.html
-[Freeform line series]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/LineSeries.html
-[Default library style]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/
+[Dashboard]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/Dashboard.html
+[Solid FillStyle]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/SolidFill.html
+[RGBA color factory]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/functions/ColorRGBA.html
+[XY cartesian chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/ChartXY.html
+[Axis]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/Axis.html
+[Scroll strategies]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/variables/AxisScrollStrategies.html
+[Freeform line series]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/LineSeries.html
 
