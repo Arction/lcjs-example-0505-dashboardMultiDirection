@@ -2,10 +2,10 @@
  * LightningChartJS example that showcases series/axes progressing to all kinds of directions inside a dashboard.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Import xydata
-const xydata = require('@arction/xydata')
+const xydata = require('@lightningchart/xydata')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, AxisScrollStrategies, Themes } = lcjs
@@ -44,9 +44,6 @@ const createCell = (cell) => {
     // Setup data-generation for series.
     if (cell.row == cell.col) {
         const series = chart['add' + type]()
-        if (type === 'LineSeries') {
-            series.setCursorSolveBasis('nearest')
-        }
         // Random trace
         createTraceGenerator()
             .setNumberOfPoints(100000)
@@ -90,9 +87,6 @@ const createCell = (cell) => {
                 .setScrollStrategy(flipPlane ? AxisScrollStrategies.progressive : AxisScrollStrategies.fitting)
 
         const series = chart['add' + type](axisX, axisY)
-        if (type === 'LineSeries') {
-            series.setCursorSolveBasis('nearest')
-        }
         createProgressiveTraceGenerator()
             .setNumberOfPoints(100000)
             .generate()
